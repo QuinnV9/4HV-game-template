@@ -66,6 +66,7 @@ export default class Player {
       }
     }
   
+  
     keydown = (event) => {
       if (event.code == "KeyD") {
         this.rightPressed = true;
@@ -101,4 +102,5 @@ export default class Player {
         this.downPressed = false;
       }
     };
-  }
+   }
+  
