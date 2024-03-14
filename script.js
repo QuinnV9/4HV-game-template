@@ -157,4 +157,6 @@ if (spelStatus === UITLEG) {
   console.log("uitleg");
 }
 
+
 }
+export default script;
