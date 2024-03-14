@@ -15,7 +15,7 @@ export default class EnemyController {
   currentDirection = MovingDirection.right;
   xVelocity = 0;
   yVelocity = 0;
-  defaultXVelocity = 1;
+  defaultXVelocity = 2;
   defaultYVelocity = 1;
   moveDownTimerDefault = 30;
   moveDownTimer = this.moveDownTimerDefault;
@@ -137,7 +137,7 @@ export default class EnemyController {
       row.forEach((enemyNubmer, enemyIndex) => {
         if (enemyNubmer > 0) {
           this.enemyRows[rowIndex].push(
-            new Enemy(enemyIndex * 50, rowIndex * 35, enemyNubmer)
+            new Enemy(enemyIndex * 60, rowIndex * 40, enemyNubmer)
           );
         }
       });
